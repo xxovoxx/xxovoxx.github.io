@@ -1,0 +1,16 @@
+/* 定义全局样式 */
+.dark-mode {
+    --background-color: #222224;
+    --text-color: #000000;
+}
+
+.light-mode {
+    --background-color: #ffffff;
+    --text-color: #000000;
+}
+
+/* 应用全局样式 */
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}

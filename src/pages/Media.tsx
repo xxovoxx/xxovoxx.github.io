@@ -1,6 +1,6 @@
 const Media: React.FC = () => {
     return (
-        <div className="bg-custom-gray min-h-screen flex-col">
+        <div>
             <p>
                 Hello world
             </p>
