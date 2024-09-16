@@ -64,6 +64,13 @@ const CustomNavbar: React.FC = () => {
                                 </Link>
                             </div>
                         </DropdownItem>
+                        <DropdownItem key="TodoList">
+                            <div className="flex justify-center items-center h-full">
+                                <Link color={currentPath === "/TodoList" ? "primary" : "foreground"}>
+                                    计划表
+                                </Link>
+                            </div>
+                        </DropdownItem>
                     </DropdownMenu>
                 </Dropdown>
 
@@ -88,6 +95,11 @@ const CustomNavbar: React.FC = () => {
                 <NavbarItem isActive={currentPath === "/Media"}>
                     <Link color={currentPath === "/Media" ? "primary" : "foreground"} href="/Media">
                         跳转
+                    </Link>
+                </NavbarItem>
+                <NavbarItem isActive={currentPath === "/TodoList"}>
+                    <Link color={currentPath === "/TodoList" ? "primary" : "foreground"} href="/TodoList">
+                        计划表
                     </Link>
                 </NavbarItem>
             </NavbarContent>
