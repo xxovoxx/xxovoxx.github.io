@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-const useTypeEffect = (textParts: { text: string; className: string }[], speed: number = 200, delay: number = 0) => {
+const useTypeEffect = (textParts: { text: string; className: string }[], speed: number = 200) => {
     const [displayedText, setDisplayedText] = useState<string[]>([]);
     const [currentPartIndex, setCurrentPartIndex] = useState<number>(0);
     const [currentIndex, setCurrentIndex] = useState<number>(0);
