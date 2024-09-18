@@ -1,0 +1,22 @@
+/*贴合滚动*/
+.container {
+    scroll-snap-type: y mandatory;
+    overflow: scroll;
+    height: 100vh;
+}
+
+.child {
+    width: 100vw;
+    height: 100vh;
+    scroll-snap-align: start;
+}
+
+/* Tailwind CSS: 隐藏滚动条 */
+.scroll-hidden {
+    overflow: auto;
+}
+
+.scroll-hidden::-webkit-scrollbar {
+    display: none;
+    /* 隐藏滚动条 */
+}

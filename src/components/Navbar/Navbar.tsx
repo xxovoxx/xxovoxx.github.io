@@ -76,7 +76,7 @@ const CustomNavbar: React.FC = () => {
 
                 <div className="hidden sm:flex">
                     <Avatar src='https://avatars.githubusercontent.com/u/35602393?v=4' className="w-6 h-6 text-tiny" />
-                    <p className="font-bold text-inherit">Xx_OVO_xX的个人页面</p>
+                    <p className="font-bold text-inherit">辣稽PVP的个人页面</p>
                 </div>
 
 
