@@ -20,7 +20,7 @@ const CustomNavbar: React.FC = () => {
         localStorage.setItem("LightOrDarkMode", LightOrDarkMode.toString());
     }, [LightOrDarkMode]);
 
-    // Get the LightOrDarkMode value from localStorage
+    // 从localStorage获取LightOrDarkMode的值
     useEffect(() => {
         const savedMode = localStorage.getItem("LightOrDarkMode");
         const LightOrDarkMode = savedMode === "true";

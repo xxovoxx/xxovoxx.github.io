@@ -1,5 +1,5 @@
 /*贴合滚动*/
-.container {
+.containerY {
     scroll-snap-type: y mandatory;
     overflow: scroll;
     height: 100vh;
@@ -19,4 +19,48 @@
 .scroll-hidden::-webkit-scrollbar {
     display: none;
     /* 隐藏滚动条 */
+}
+
+.containerX {
+    display: flex;
+    scroll-snap-type: x mandatory;
+    overflow-x: scroll;
+    width: 50vw;
+    height: 30vh;
+    /* 让第一个和最后一个卡片有留白 */
+    padding: 0 10vw;
+    /* 滚动时，第一个卡片居中 */
+    scroll-padding-left: 10vw;
+    margin-top: 50px;
+}
+
+.childX {
+    /* 滚动时，居中对齐 */
+    scroll-snap-align: center;
+    /* 卡片宽度为视口的 80%，两边留出 10% */
+    width: 30vw;
+    /* 保持和容器一样高 */
+    height: 100%;
+    flex-shrink: 0;
+    margin-right: 2rem;
+}
+
+@media (max-width: 640px) {
+    .containerX {
+        width: 80vw;
+        /* 使用全宽 */
+        height: 40vh;
+        /* 根据需求调整高度 */
+        padding: 0 5vw;
+        /* 较小的左右填充 */
+        scroll-padding-left: 5vw;
+        /* 滚动时的填充 */
+    }
+
+    .childX {
+        width: 60vw;
+        /* 在手机上使用更宽的卡片 */
+        margin-right: 1rem;
+        /* 减小间隔 */
+    }
 }
