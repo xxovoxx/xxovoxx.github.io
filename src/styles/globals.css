@@ -3,12 +3,18 @@
     --background-color: #222224;
     --text-color: #ffffff;
     --svg-color: #ffffff;
+    --card-bg-color: #333336;
+    --card-border-color: #444448;
+    --button-bg-color: #64646a99;
 }
 
 .light-mode {
     --background-color: #ffffff;
     --text-color: #222224;
     --svg-color: #222224;
+    --card-bg-color: #dddddd;
+    --card-border-color: #cfcfcf;
+    --button-bg-color: #94949e99;
 }
 
 /* 应用全局样式 */
@@ -20,4 +26,13 @@ body {
 
 svg {
     color: var(--svg-color);
+}
+
+.card {
+    background-color: var(--card-bg-color);
+    border: 1px solid var(--card-border-color);
+}
+
+button {
+    background-color: var(--button-bg-color);
 }
